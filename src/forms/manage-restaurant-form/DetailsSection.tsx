@@ -60,9 +60,9 @@ const DetailsSection = () => {
                 name="deliveryPrice"
                 render={({ field }) => (
                     <FormItem className="max-w-[40%]">
-                        <FormLabel>Delivery price (Rs)</FormLabel>
+                        <FormLabel>Delivery price (₹)</FormLabel>
                         <FormControl>
-                            <Input {...field} className="bg-white" placeholder="1.00" />
+                            <Input {...field} className="bg-white" placeholder="100" />
                         </FormControl>
                         <FormMessage />
                     </FormItem>

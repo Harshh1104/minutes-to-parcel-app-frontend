@@ -1,9 +1,9 @@
-import { useUpdateMyUser, userGetMyUser } from "@/api/MyUserApi";
+import { useUpdateMyUser, useGetMyUser } from "@/api/MyUserApi";
 import UserProfileForm from "@/forms/user-profile-form/UserProfileForm"
 
 const UserProfilePage = () => {
 
-    const { currentUser, isLoading: isGetLoading } = userGetMyUser();
+    const { currentUser, isLoading: isGetLoading } = useGetMyUser();
     const { updateUser, isLoading: isUpdateLoading } = useUpdateMyUser();
 
     if (isGetLoading) {
